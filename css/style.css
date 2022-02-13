@@ -1,0 +1,45 @@
+body{
+		background: #333;
+}
+.wrapper{
+	padding: 50px;
+}
+
+.diagrma_container{
+	display: flex;
+	justify-content: center;
+}
+
+
+.pie-chart{
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	position: relative;
+	background: conic-gradient(red 90deg, green 90deg);
+	box-shadow: 5px 5px 25px #000;
+}
+
+.pie-chart span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 5px 5px 5px #000;
+	font-size:  55px;
+	font-weight: 700;
+	color: white;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.pie-chart:before{
+	content: "";
+	position: absolute;
+	top:  50%;
+	left:  50%;
+	transform: translate(-50%, -50%);
+	height: 150px;
+	width: 150px;
+	background-color: #333;
+	border-radius: 50%;
+}
